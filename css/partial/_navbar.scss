@@ -7,6 +7,7 @@ header{
 		margin-right:auto;
 		ul{
 			display:flex;
+			flex-wrap:wrap;
 		}
 		li.logo{
 			flex:1;

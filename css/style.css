@@ -49,6 +49,7 @@ header .main-navbar {
 }
 header .main-navbar ul {
   display: flex;
+  flex-wrap: wrap;
 }
 header .main-navbar li.logo {
   flex: 1;
