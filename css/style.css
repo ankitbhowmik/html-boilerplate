@@ -1,0 +1,103 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+main {
+  /* add padding-bottom according to the height of the footer */
+  padding-bottom: 40px;
+}
+
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#root {
+  overflow-x: hidden;
+  font-size: 18px;
+  min-height: 100vh;
+  position: relative;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+}
+
+header {
+  background-color: #f1f1f1;
+}
+header .main-navbar {
+  padding: 10px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .main-navbar ul {
+  display: flex;
+}
+header .main-navbar li.logo {
+  flex: 1;
+}
+header .main-navbar li.logo h1 {
+  padding: 0;
+  margin: 0;
+}
+header .main-navbar li.item {
+  order: 2;
+  width: 100%;
+  display: none;
+  margin-top: 12px;
+  text-align: center;
+}
+header .main-navbar li.item a {
+  color: black;
+  display: inline-block;
+}
+header .main-navbar li.toggle {
+  order: 1;
+  cursor: pointer;
+}
+header .main-navbar .item.active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  header .main-navbar li.item {
+    order: 0;
+    width: auto;
+    display: block;
+    padding-right: 1rem;
+    margin-top: 5px;
+  }
+
+  header .main-navbar li.toggle {
+    display: none;
+  }
+}
+/* add padding to main html tag style*/
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
